@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login form</title>
+</head>
+<body>
+    <p> <span style="color:black;font-weight:bold">Fill the details given below:</span></p>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    <div id="id01" class="modal">  
+        <form class="modal-content animate" action="/action_page.php" method="post">      
+          </div>
+          <img src="https://threejs.org/files/projects/iss-sim.png" alt="Flowers in Chania" width="460" height="345">
+    <div id="myForm">
+        <form autocomplete="on">
+          <fieldset>
+          <br><br><table>
+              <tbody><tr>
+                  <td><b>Name</b></td>
+                  <td><input type="text" id="name" required="" placeholder="Enter your name here"></td>
+              </tr> 
+              <tr><td><b>Age</b></td>
+              <td><input type="number" id="age"  required="" placeholder="Enter your age here"></td></tr>
+              <tr>
+                <td><b>Birthday</b></td>
+                <td><input type="date" id="birth date" nam="" required="" placeholder="Enter your dob here"></td>        
+          </tr>
+        
+          <tr>
+              <td><b>phone</b></td>
+              <td><input type="tel" id="phone" required="" placeholder="Enter your number here" pattern="[0-9*]{10}"></td>
+          </tr>
+              <tr>
+               <td><label for="email"><b>Email</b></label></td>
+                <td><input type="email" placeholder="Enter Email id " name="email" required=""></td>
+              </tr>
+           <tr>
+              <td><b>Password</b></td>
+              <td><input type="password" placeholeder="Enter Password" name="psw" required=""></td>
+              </tr>
+              <tr>
+                </tr><tr>
+                    <td><b>Gender</b></td>
+                    <td>
+                        <select name="Gender" id="Gender">
+                          <option value="NONE" <="" option="">
+                          </option><option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                          <option value="Others">Others</option>             
+                          </select></td></tr> 
+                          <td><b>Qualification</b></td>     
+                          <td>
+                          <select name="Qualification" id="Qualification">
+                            <option value="NONE" <="" option="">
+                          </option><option value="SSCL">SSCL</option>
+                          <option value="HSS">HSS</option>
+                          <optgroup label="UNDER GRADUATTION">UNDER GRADUATTION
+                           <option value="Bsc">Bsc</option>
+                           <option value="BCA">BCA</option>
+                           <option value="BA">BA</option>
+                           <option value="B.COM">B.COM</option>
+                            </optgroup>
+                          <optgroup label="POST GRADUATTION">POST GRADUATTION
+                            <option value="Mcs">Msc</option>
+                            <option value="MCA">MCA</option>
+                            <option value="MBA">MBA</option>
+                            <option value="MA">MA</option>
+                            <option value="M.COM">M.COM</option>
+                            </optgroup>
+                          </select></td></tr>
+                          <tr>
+                            <td><b>CGP</b></td>
+                            <td><input type="range" step="0.01" id="salary" name="salary" min="0.1" max="1.100%" onchange="show_value(this.value);" required="">
+                              <span id="demo"></span></td>
+                          </tr><tr>
+                         <tr> 
+                  <td><b>Attach photo</b></td>
+              <td><input type="file" id="file" multiple="" accept=".pdf" required=""></td></tr>
+              </body>
+            </table>       
+              <br>
+          <input type="submit" id="submit" value="Submit" onclick="return showFormInfo()">
+          <input type="reset" id="reset" value="Reset">
+      </fieldset></form>
+    </div>
+</body>
+</html>
